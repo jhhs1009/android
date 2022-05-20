@@ -19,5 +19,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LogActivity::class.java)
             startActivity(intent)
         }
+
+        btnnavibar.setOnClickListener{
+            val intent = Intent(this, NaviActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
