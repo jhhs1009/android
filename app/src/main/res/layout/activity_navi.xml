@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -14,18 +15,18 @@
         android:src="@drawable/logo"
         tools:ignore="MissingConstraints" />
 
+
     <View
+        android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="580dp"
         android:backgroundTint="#000AFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="2.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377"
-        />
-
+        app:layout_constraintVertical_bias="0.331" />
 
     <Button
         android:id="@+id/btnhome"
@@ -35,6 +36,7 @@
         android:backgroundTint="#000AFF"
         android:insetLeft="0dp"
         android:text="Home"
+        android:textColor="#FFFFFF"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +53,7 @@
         android:layout_height="48dp"
         android:backgroundTint="#000AFF"
         android:text="내 위치"
+        android:textColor="#FFFFFF"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,6 +68,7 @@
         android:layout_height="48dp"
         android:backgroundTint="#000AFF"
         android:text="보관함"
+        android:textColor="#FFFFFF"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,6 +83,7 @@
         android:layout_height="48dp"
         android:backgroundTint="#000AFF"
         android:text="My"
+        android:textColor="#FFFDFD"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +99,7 @@
         android:layout_marginEnd="88dp"
         android:backgroundTint="#000AFF"
         android:text="아이콘"
+        android:textColor="#FFFFFF"
         android:textSize="8sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,6 +112,7 @@
         android:layout_height="48dp"
         android:backgroundTint="#000AFF"
         android:text="Drawer"
+        android:textColor="#FFFFFF"
         android:textSize="7sp"
         app:layout_constraintBottom_toTopOf="@+id/btnhome"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,6 +120,116 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/btnalarm"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#F3F3F3"
+        android:text="    알림설정"
+
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/btncountry"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="    국가설정(언어)"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <Button
+        android:id="@+id/btnnotice"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="    공지사항"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <Button
+        android:id="@+id/btnqna"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="    문의사항"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <Button
+        android:id="@+id/btnregion"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="    지역설정"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <Button
+        android:id="@+id/btnpersonal"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="    개인정보 동의서, 서비스 이용약관 확인"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="    회원탈퇴"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
