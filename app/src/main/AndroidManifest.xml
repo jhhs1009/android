@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Page">
         <activity
+            android:name=".ExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".NaviActivity"
             android:exported="false" />
-
         <activity
             android:name=".LogActivity"
             android:exported="false" />

@@ -10,19 +10,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnGoSubActivity.setOnClickListener{
+        btnGoSubActivity.setOnClickListener {
             val intent = Intent(this, SubActivity::class.java)
             startActivity(intent)
         }
 
-        btnlog.setOnClickListener{
+        btnlog.setOnClickListener {
             val intent = Intent(this, LogActivity::class.java)
             startActivity(intent)
         }
 
-        btnnavibar.setOnClickListener{
+        btnnavibar.setOnClickListener {
             val intent = Intent(this, NaviActivity::class.java)
             startActivity(intent)
+        }
+
+        btnexer.setOnClickListener {
+            val intent = Intent(this, ExerciseActivity::class.java)
+            startActivity(intent)
+
         }
     }
 }
